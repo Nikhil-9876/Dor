@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { NavLink, useLocation, useNavigate } from 'react-router-dom'
 import {
-  LayoutDashboard, FileText, Mail, Settings, Zap, Users, ChevronLeft, ChevronRight, Plus
+  LayoutDashboard, FileText, Mail, Settings, Users, ChevronLeft, ChevronRight, Plus
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
@@ -33,16 +33,25 @@ export function Sidebar({ collapsed, onToggle }: SidebarProps) {
       <div
         className={cn(
           'flex items-center border-b border-gray-100 dark:border-dark-border overflow-hidden',
-          collapsed ? 'justify-center px-0 py-5' : 'gap-2.5 px-5 py-5'
+          collapsed ? 'justify-center px-2 py-3' : 'px-4 py-3'
         )}
       >
-        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center shadow-md flex-shrink-0">
-          <Zap size={16} className="text-white" />
-        </div>
-        {!collapsed && (
-          <span className="font-bold text-gray-900 dark:text-white text-base tracking-tight whitespace-nowrap">
-            Dor
-          </span>
+        {collapsed ? (
+          /* Collapsed: show small square crop of just the envelope icon part */
+          <div className="w-8 h-8 rounded-lg overflow-hidden flex-shrink-0 bg-white dark:bg-dark-surface">
+            <img
+              src="/logo.jpeg"
+              alt="Dor"
+              className="w-full h-full object-cover object-left-top scale-150 origin-top-left"
+            />
+          </div>
+        ) : (
+          /* Expanded: show the full logo */
+          <img
+            src="/logo.jpeg"
+            alt="Dor — Email Referral Platform"
+            className="h-10 w-auto object-contain"
+          />
         )}
       </div>
 

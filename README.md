@@ -1,11 +1,9 @@
 <p align="center">
-  <h1 align="center">Dor ✉️</h1>
-  <p align="center">
-    <strong>Your personal referral outreach engine — send individually-addressed referral emails at scale, straight from your own Gmail.</strong>
-  </p>
-  <p align="center">
-    <a href="#-features">Features</a> · <a href="#-tech-stack">Tech Stack</a> · <a href="#-local-setup">Local Setup</a> · <a href="#-project-structure">Project Structure</a> · <a href="#-how-it-works">How It Works</a>
-  </p>
+  <img src="logo.jpeg" alt="Dor — Email Referral Platform" width="320" />
+  <br/>
+  <strong>Your personal referral outreach engine — send individually-addressed referral emails at scale, straight from your own Gmail.</strong>
+  <br/><br/>
+  <a href="#-features">Features</a> · <a href="#-tech-stack">Tech Stack</a> · <a href="#-local-setup">Local Setup</a> · <a href="#-project-structure">Project Structure</a> · <a href="#-how-it-works">How It Works</a>
 </p>
 
 ---
