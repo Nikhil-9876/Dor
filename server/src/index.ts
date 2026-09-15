@@ -38,7 +38,7 @@ app.use(errorHandler);
 
 // ─── Start ───────────────────────────────────────────────────────────────────
 const server = app.listen(config.port, () => {
-  console.log(`\n🚀 RefMail server running on http://localhost:${config.port}`);
+  console.log(`\n🚀 Dor server running on http://localhost:${config.port}`);
   console.log(`   Environment: ${config.nodeEnv}`);
   console.log(`   CORS origin: ${config.clientUrl}\n`);
 });

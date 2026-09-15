@@ -1,7 +1,7 @@
 {
-  "name": "refmail-server",
+  "name": "dor-server",
   "version": "1.0.0",
-  "description": "RefMail backend — Express + TypeScript",
+  "description": "Dor backend — Express + TypeScript",
   "main": "dist/index.js",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",

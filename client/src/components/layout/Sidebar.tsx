@@ -41,7 +41,7 @@ export function Sidebar({ collapsed, onToggle }: SidebarProps) {
         </div>
         {!collapsed && (
           <span className="font-bold text-gray-900 dark:text-white text-base tracking-tight whitespace-nowrap">
-            RefMail
+            Dor
           </span>
         )}
       </div>
@@ -107,7 +107,7 @@ export function Sidebar({ collapsed, onToggle }: SidebarProps) {
           )}
         </button>
         {!collapsed && (
-          <p className="text-[10px] text-gray-300 dark:text-gray-700 px-3 mt-1">RefMail v1.0</p>
+          <p className="text-[10px] text-gray-300 dark:text-gray-700 px-3 mt-1">Dor v1.0</p>
         )}
       </div>
     </aside>

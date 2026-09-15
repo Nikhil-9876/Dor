@@ -1,5 +1,5 @@
 -- ============================================================
--- RefMail — Migration 002: Contacts + Reply Tracking
+-- Dor — Migration 002: Contacts + Reply Tracking
 -- Run this in the Supabase SQL editor.
 -- ============================================================
 

@@ -1,5 +1,5 @@
 -- ============================================================
--- RefMail — Initial Schema
+-- Dor — Initial Schema
 -- Run this in the Supabase SQL editor for your project.
 -- ============================================================
 

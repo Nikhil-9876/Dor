@@ -23,7 +23,7 @@ const ThemeContext = createContext<ThemeContextValue>({
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<Theme>(() => {
-    const saved = localStorage.getItem('refmail-theme') as Theme | null
+    const saved = localStorage.getItem('dor-theme') as Theme | null
     if (saved) return saved
     return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
   })
@@ -33,7 +33,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     const root = document.documentElement
     if (theme === 'dark') root.classList.add('dark')
     else root.classList.remove('dark')
-    localStorage.setItem('refmail-theme', theme)
+    localStorage.setItem('dor-theme', theme)
   }, [theme])
 
   const toggle = useCallback((origin?: RippleOrigin) => {

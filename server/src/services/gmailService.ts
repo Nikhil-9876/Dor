@@ -53,7 +53,7 @@ async function getAuthenticatedClient() {
  * Supports HTML body + optional PDF attachment.
  */
 function buildMimeMessage(opts: SendEmailOptions & { fromEmail: string; fromName: string }): string {
-  const boundary = `RefMail_${Date.now()}_${Math.random().toString(36).slice(2)}`;
+  const boundary = `Dor_${Date.now()}_${Math.random().toString(36).slice(2)}`;
   const lines: string[] = [];
 
   // Headers
@@ -109,7 +109,7 @@ export async function sendEmail(opts: SendEmailOptions): Promise<{ messageId: st
   const { auth, email: fromEmail } = await getAuthenticatedClient();
 
   const gmail = google.gmail({ version: 'v1', auth });
-  const fromName = fromEmail ? fromEmail.split('@')[0] : 'RefMail';
+  const fromName = fromEmail ? fromEmail.split('@')[0] : 'Dor';
 
   const raw = buildMimeMessage({ ...opts, fromEmail, fromName });
 

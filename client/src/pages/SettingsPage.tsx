@@ -12,14 +12,14 @@ export function SettingsPage() {
   const [limit, setLimit] = useState('50')
 
   const saveDefaults = () => {
-    localStorage.setItem('refmail-delay', delay)
-    localStorage.setItem('refmail-limit', limit)
+    localStorage.setItem('dor-delay', delay)
+    localStorage.setItem('dor-limit', limit)
     toast.success('Defaults saved')
   }
 
   return (
     <div className="flex flex-col h-full overflow-hidden">
-      <Header title="Settings" subtitle="Configure your RefMail preferences" />
+      <Header title="Settings" subtitle="Configure your Dor preferences" />
 
       <div className="flex-1 overflow-y-auto p-6">
         <div className="max-w-xl mx-auto space-y-6">
@@ -29,7 +29,7 @@ export function SettingsPage() {
             <h2 className="section-title mb-3">Email Account</h2>
             <GmailConnect />
             <p className="text-xs text-gray-400 dark:text-gray-500 mt-3 leading-relaxed">
-              RefMail uses the Gmail API to send emails directly from your Google account.
+              Dor uses the Gmail API to send emails directly from your Google account.
               Your OAuth tokens are stored in Supabase. Emails appear in your Gmail Sent folder.
             </p>
           </section>

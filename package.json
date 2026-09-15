@@ -1,5 +1,5 @@
 {
-  "name": "refmail",
+  "name": "dor",
   "private": true,
   "scripts": {
     "dev": "concurrently --names \"server,client\" --prefix-colors \"cyan,magenta\" \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
